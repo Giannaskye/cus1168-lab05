@@ -13,7 +13,7 @@ public class ArrayStack<T extends Number> implements CustomStack<T> {
     private static final double GROWTH_FACTOR = 1.5;
 
     // Static variables for tracking across all instances
-    private static int totalStacks = 0;
+    private static int totalStacks = 1;
     private static int totalElements = 0;
 
     // Instance variables
@@ -74,7 +74,6 @@ public class ArrayStack<T extends Number> implements CustomStack<T> {
 
     @Override
     public T peek() {
-
         operationCount++;
         if (isEmpty()) {
             return null;

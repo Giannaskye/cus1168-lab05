@@ -8,6 +8,7 @@ public class StackAdditionLab {
         System.out.println("Is stack empty?: " + stack.isEmpty());
         stack.push(10);
         stack.push(20);
+        System.out.println("Stack size after pushing two elements: " + stack.size());
         // System.out.println("Stack size: " + stack.size());
         System.out.println("Stack statistics: " + stack.getStats());
         System.out.println("Stack global statistics: " + ArrayStack.getGlobalStats());
@@ -35,7 +36,8 @@ public class StackAdditionLab {
         floatStack.push(2.5);
         floatStack.push(3.5);
 
-        System.out.println("Stack statistics: " + stack.getStats());
+        System.out.println("First Stack statistics: " + stack.getStats());
+        System.out.println("Second Stack statistics: " + floatStack.getStats());
         System.out.println("resizeStack statistics: " + resizeStack.getStats());
         System.out.println("Stack global statistics: " + ArrayStack.getGlobalStats());
     }
